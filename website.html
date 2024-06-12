@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1</title>
+    <link href="website.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"> <!-- Add the slideshow styles -->
+</head>
+<body>
+    <div class="background">
+        <div class="color-overlay"></div>
+    </div>
+    <row>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#" onclick="scrollToSection('section1')">Home</a>
+            <a href="#" onclick="scrollToSection('section2')">Recipes</a>
+            <a href="#" onclick="scrollToSection('section3')">About</a>
+            
+            <a href="#" onclick="scrollToSection('section4')">Contact</a>
+        </div>
+        
+        <div class="notify-menu">
+            <logo>
+                <img src="LOGO.png" class="logo" width="95" height="95"/>
+            </logo>
+            <nav>
+                <ul class="main-menu">
+                    <li onclick="toggleMenu()">&#9776;</li>
+                </ul>
+            </nav>
+        </div>
+        
+        <script>
+            var navClosed = true; 
+            
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                navClosed = false;
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                navClosed = true;
+            }
+            
+            function toggleMenu() {
+                if (navClosed) {
+                    openNav();
+                } else {
+                    closeNav();
+                }
+            }
+
+            function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                
+                // Check if navigation is closed
+                if (navClosed) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    // Close the navigation first, then scroll
+                    closeNav();
+                    setTimeout(() => {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }, 500); // Delay to ensure navigation is closed before scrolling
+                }
+            }
+        </script>
+    </row>
+    <row>
+        <h1 class="title">PINOY RECIPES</h1>
+    </row> 
+    <section id="section1" class="section-bg1 overlay">
+        <img src="light.webp" class="image" alt="Background Image">
+        <div class="text">
+            <h2>Happy tummy, <br>happy life</h2>
+        </div>
+    </section>
+
+    <section id="section2" class="section-bg2">
+        <h3>MENU</h3>
+        <div class="menu-container">
+            <div class="card">
+                <img src="adobochicken1.jpg" alt="Adobo Chicken">
+                <div class="card-content">
+                    <h3>Adobo Chicken</h3>
+                    <p>Adobo Chicken is a popular Filipino dish made with chicken, soy sauce, vinegar, and garlic.</p>
+                    <button onclick="showMoreInfo(this)">More Info</button>
+                    <div class="more-info-container">
+                        <div class="more-info">
+                            <ul>
+                                <li>Chicken</li>
+                                <li>Soy sauce</li>
+                                <li>White vinegar</li>
+                                <li>Onion </li>
+                                <li>Garlic </li>
+                                <li>Sugar</li>
+                                <li>Bay leaves</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Sinigang1.jpg" alt="Sinigang">
+                <div class="card-content">
+                    <h3>Sinigang</h3>
+                    <p>Sinigang is a Filipino soup characterized by its sour and savory taste, often made with pork and tamarind.</p>
+                    <button onclick="showMoreInfo(this)">More Info</button>
+                    <div class="more-info-container">
+                    <div class="more-info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <img src="pancit1.jpg" alt="Pancit">
+                <div class="card-content">
+                    <h3>Pancit</h3>
+                    <p>Pancit is a Filipino noodle dish that is often served during celebrations and family gatherings.</p>
+                    <button onclick="showMoreInfo(this)">More Info</button>
+                    <div class="more-info-container">
+                    <div class="more-info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+       let currentlyOpen = null;
+
+function showMoreInfo(button) {
+    const moreInfoDiv = button.nextElementSibling;
+    if (currentlyOpen && currentlyOpen !== moreInfoDiv) {
+        currentlyOpen.style.display = 'none';
+    }
+    moreInfoDiv.style.display = moreInfoDiv.style.display === 'block' ? 'none' : 'block';
+    currentlyOpen = moreInfoDiv;
+}
+    </script>
+
+    <section id="section3" class="section-bg3">
+        <h2>About Us</h2>
+        <p>Jane and John recipe, a website of a Filipino food recipe,
+        <br><br> is dedicated to delivering high-quality and innovative food recipes to consumers nationwide.
+        <br><br> From farm to table, we prioritize sourcing the finest ingredients
+        <br><br> and implementing rigorous quality control measures to ensure the utmost freshness, flavor, and nutritional value in every product.</p>
+    </section>
+
+    <section id="section4" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3> Send us a message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i>+63 905 186 2215</p>
+                    <p><i class="fas fa-envelope"></i>tubiojohnlie61@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i>123 Street, Cagayan De Oro, Philippines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <title>Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</body>
+</html>
