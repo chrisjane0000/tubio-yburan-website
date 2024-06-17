@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import '../css/website.css';
+import '../css/Greetings.css';
 import Light from '../img/background.jpg';
 
 function Greetings() {

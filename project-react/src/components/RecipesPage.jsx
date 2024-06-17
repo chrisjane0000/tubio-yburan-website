@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
-import '../css/website.css';
+import '../css/RecipesPage.css';
 import Sinigang from '../img/Sinigang1.jpg';
 import Adobo from '../img/adobochicken1.jpg';
 import Dinuguan from '../img/dinuguan.jpg';
@@ -59,7 +59,7 @@ function RecipesPage() {
                         <img src={Sinigang} alt="Sinigang" />
                         <div className="card-content">
                             <h3>Sinigang</h3>
-                            <p>Sinigang is a Filipino soup characterized by its sour and savory taste, often made with pork and tamarind.</p>
+                            <p>Sinigang is a Filipino soup characterized by its sour and savory taste, often made with pork .</p>
                             <button onClick={() => toggleMoreInfo('Sinigang')}>More Info</button>
                             {showMoreSinigang && (
                                 <div className="more-info-container">
@@ -107,7 +107,7 @@ function RecipesPage() {
                         <img src={Humba} alt="Humba" />
                         <div className="card-content">
                             <h3>Humba</h3>
-                            <p>Humba is a Filipino braised pork dish cooked with soy sauce, sugar, and spices.</p>
+                            <p>Humba is a Filipino braised pork dish cooked <br />with soy sauce, sugar, and spices.</p>
                             <button onClick={() => toggleMoreInfo('Humba')}>More Info</button>
                             {showMoreHumba && (
                                 <div className="more-info-container">

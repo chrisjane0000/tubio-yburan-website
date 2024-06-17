@@ -4,6 +4,7 @@ import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Greetings from './components/Greetings';
+import Profile from './components/Profile';
 import RecipesPage from './components/RecipesPage';
 import Sidenav from './components/Sidenav';
 import Title from './components/Title';
@@ -19,14 +20,14 @@ function App() {
               <Sidenav />
               <Title />
               <Greetings />
+              < AboutUs/>
+              <Profile/>
+              < Contact/>
               <Footer />
             </>
           }
         />
         <Route path="/tubio-yburan/RecipesPage" element={<RecipesPage />} />
-        <Route path="/tubio-yburan/AboutUs" element={<AboutUs />} />
-        <Route path="/tubio-yburan/Contact" element={<Contact />} />
-
       </Routes>
     </BrowserRouter>
   );

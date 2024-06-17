@@ -1,12 +1,12 @@
 import React from 'react';
 import '../App.css';
-import '../css/website.css';
+import '../css/Contact.css';
 
 function Contact() {
     return (
         <div>
             <section id="section4" className="contact">
-                <div className="container">
+                <div className="containertwo">
                     <h2>Contact Us</h2>
                     <div className="contact-wrapper">
                         <div className="contact-form">
