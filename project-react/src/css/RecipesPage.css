@@ -5,28 +5,23 @@
     gap: 20px;
     padding: 50px 0;
 }
+
 .section-bg2 h2 {
     font-size: 50px;
-    margin-left: 42%;
-    background-color: rgb(238, 172, 106); 
-    margin-right: 38%;
+    margin: 0 auto;
+    background-color: rgb(224, 75, 75);
     border-radius: 5px;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding-left: 2%;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
 }
+
 @media (max-width: 768px) {
     .section-bg2 h2 {
-        font-size: 50px;
-        margin-left: 25%;
-        background-color: rgb(238, 172, 106); 
-        margin-right: 85px;
-        border-radius: 5px;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        padding-left: 2%;
+        font-size: 40px;
+    }
 }
-}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -49,6 +44,7 @@
     border-radius: 50%;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
+
 @media (max-width: 768px) {
     .card img {
         width: 100%;
@@ -63,38 +59,43 @@
 }
 
 .card-content {
-    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card-content p {
     color: black;
-    padding-bottom: 5px;
-    font-size: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
 }
+
 .card-content h3 {
     color: black;
+    margin-bottom: 10px;
 }
+
 .card button {
-    background-color: blue;
+    background-color: rgb(224, 75, 75);
     border: none;
     border-radius: 5px;
     color: white;
     cursor: pointer;
     margin: 20px 0;
-    padding: 20px 20px;
+    padding: 10px 20px;
     text-transform: uppercase;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .card button:hover {
     background-color: yellow;
-}
-
-@keyframes colorCycle {
-    0% { background-color: blue; }
-    33% { background-color: red; }
-    66% { background-color: yellow; }
-    100% { background-color: blue; }
+    color: black;
 }
 
 .more-info-container {
@@ -103,12 +104,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 0.5); /* Use rgba for opacity */
     display: inline-block;
     transition: 8s ease;
     overflow: hidden;
     border-radius: 5px;
-    animation: colorCycle 8s infinite ease-in-out;
 }
 
 .more-info {
@@ -117,27 +117,30 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: large;
-    color: black;
+    color: white;
     display: block;
     white-space: nowrap;
 }
+
 .custom-link {
-    color: #dfa470;
+    color: rgb(224, 75, 75);
     text-decoration: none;
     padding: 10px;
-    border: 1px solid #dfa470;
+    border: 1px solid rgb(224, 75, 75);
     border-radius: 5px;
 }
 
 .custom-link:hover {
-    background-color: lightblue;
+    background-color: rgb(224, 75, 75);
+    color: black;
 }
+
 .hoomebtn {
     position: fixed;
     top: 20px;
     left: 90%;
     padding: 10px 20px;
-    background-color: #cc905b;
+    background-color: rgb(224, 75, 75);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -145,5 +148,5 @@
 }
 
 .hoomebtn:hover {
-    background-color: #dfa470;
+    background-color: rgb(224, 75, 75);
 }

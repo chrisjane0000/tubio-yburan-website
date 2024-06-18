@@ -26,9 +26,24 @@ function Contact() {
                         </div>
                         <div className="contact-info">
                             <h3>Contact Information</h3>
-                            <p><i className="fas fa-phone"></i>+63 905 186 2215</p>
-                            <p><i className="fas fa-envelope"></i>tubiojohnlie61@gmail.com</p>
-                            <p><i className="fas fa-map-marker-alt"></i>123 Street, Cagayan De Oro, Philippines</p>
+                            <p>
+                                <a href="tel:+639051862215"><i className="fas fa-phone"></i><span>+63 905 186 2215</span></a>
+                            </p>
+                            <p>
+                                <a href="mailto:christinejaneyburan8@gmail.com"><i className="fas fa-envelope"></i><span>Christine Jane Yburan</span></a>
+                            </p>
+                            <p>
+                                <a href="https://maps.google.com/?q=123+Street%2C+Cagayan+De+Oro%2C+Philippines" target="_blank" rel="noopener noreferrer">
+                                    <i className="fas fa-map-marker-alt"></i>
+                                    <span>123 Street, Cagayan De Oro, Philippines</span>
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://www.facebook.com/christinejane.cabactulan.1?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-facebook"></i>
+                                    <span>Facebook Profile</span>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>

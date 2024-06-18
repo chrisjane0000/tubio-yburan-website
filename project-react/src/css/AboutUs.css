@@ -1,17 +1,26 @@
 .section-bg3 {
-    padding-top: 30px;
+    top: 30px;
+}
+.section-bg3 h2 {
+    color: red;
 }
 
-.section-bg3 h2, p {
+.column p {
+    color: blue;
+    font-weight: bold;
+
+}
+
+.section-bg3 .column h2 {
     margin: 0;
-    line-height: 2;
+    line-height: 1;
     text-align: left;
     display: flex;
     justify-content: left;
     align-items: center;
     font-size: 20px;
     width:50%;
-    background-color: beige;
+    margin-left: 30px;
 }
 
 @media (max-width: 768px) {

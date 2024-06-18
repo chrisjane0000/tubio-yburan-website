@@ -28,7 +28,7 @@ function Profile() {
                         className="about-image"
                         onClick={() => openModal(image1)}
                     />
-                    <div className="image-text">Christine Jane Yburan</div>
+                    <div className="image-text">Christine Jane Yburan<br />BSIT Student</div>
                 </div>
                 <div className="image-container">
                     <img
@@ -37,7 +37,7 @@ function Profile() {
                         className="about-image"
                         onClick={() => openModal(image2)}
                     />
-                    <div className="image-text">Johnlie Tubio</div>
+                    <div className="image-text">Johnlie Tubio<br />BSIT Student</div>
                 </div>
             </div>
 
