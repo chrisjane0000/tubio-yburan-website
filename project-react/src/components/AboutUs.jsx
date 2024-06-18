@@ -12,15 +12,15 @@ function AboutUs() {
                     <div className="column">
                         <p>
                             Jane and John recipe, a website of a Filipino food recipe,
-                            <br /> <br />
+                            <br />
                             is dedicated to delivering high-quality and innovative
-                            <br /> <br />
+                            <br />
                             food recipes to consumers nationwide. From farm to table,
-                            <br /> <br />
+                            <br />
                             we prioritize sourcing the finest ingredients and implementing
-                            <br /> <br />
+                            <br />
                             rigorous quality control measures to ensure the utmost freshness,
-                            <br /> <br />
+                            <br />
                             flavor, and nutritional value in every product.
                         </p>
                     </div>
