@@ -1,14 +1,12 @@
 import React from 'react';
 import '../App.css';
 import '../css/Greetings.css';
-import Light from '../img/background.jpg';
 
 function Greetings() {
     return (
         <section id="section1" className="section-bg1 overlay">
-            <img src={Light} className="image" alt="Background Image" />
             <div className="text">
-                <h2>Happy tummy, <br />happy life</h2>
+                <h1 className="title"><span className="pinoy">PINOY</span> <span className="recipes">RECIPES</span></h1>
             </div>
         </section>
     );

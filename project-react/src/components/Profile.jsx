@@ -28,7 +28,7 @@ function Profile() {
                         className="about-image"
                         onClick={() => openModal(image1)}
                     />
-                    <div className="image-text">Christine Jane Yburan<br />BSIT Student</div>
+                    <div className="image-text">Christine Jane<br/> Yburan<br />BSIT Student</div>
                 </div>
                 <div className="image-container">
                     <img

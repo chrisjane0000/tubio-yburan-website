@@ -4,10 +4,10 @@ import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Greetings from './components/Greetings';
-import Profile from './components/Profile';
 import RecipesPage from './components/RecipesPage';
 import Sidenav from './components/Sidenav';
-import Title from './components/Title';
+import Slideshow from './components/Slideshow';
+
 
 function App() {
   return (
@@ -18,16 +18,15 @@ function App() {
           element={
             <>
               <Sidenav />
-              <Title />
               <Greetings />
-              < AboutUs/>
-              <Profile/>
+              <Slideshow />
               < Contact/>
               <Footer />
             </>
           }
         />
         <Route path="/tubio-yburan/RecipesPage" element={<RecipesPage />} />
+        <Route path="/tubio-yburan/AboutUs" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import '../css/AboutUs.css';
+import Profile from './Profile';
 
 function AboutUs() {
-
     return (
-        <div>
+        <div className="about-us-container">
             <section id="section3" className="section-bg3">
                 <h2>About Us</h2>
                 <div className="contentone">
@@ -25,7 +26,11 @@ function AboutUs() {
                         </p>
                     </div>
                 </div>
+                <div className="profile-section">
+                    <Profile />
+                </div>
             </section>
+            <Link to="/tubio-yburan" className="backend">back</Link>
         </div>
     );
 }

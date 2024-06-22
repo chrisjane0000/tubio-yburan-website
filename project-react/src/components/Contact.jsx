@@ -9,23 +9,7 @@ function Contact() {
                 <div className="containertwo">
                     <h2>Contact Us</h2>
                     <div className="contact-wrapper">
-                        <div className="contact-form">
-                            <h3>Send us a message</h3>
-                            <form>
-                                <div className="form-group">
-                                    <input type="text" name="name" placeholder="Your Name" />
-                                </div>
-                                <div className="form-group">
-                                    <input type="email" name="email" placeholder="Your Email" />
-                                </div>
-                                <div className="form-group">
-                                    <textarea name="message" placeholder="Your Message"></textarea>
-                                </div>
-                                <button type="submit">Send Message</button>
-                            </form>
-                        </div>
                         <div className="contact-info">
-                            <h3>Contact Information</h3>
                             <p>
                                 <a href="tel:+639051862215"><i className="fas fa-phone"></i><span>+63 905 186 2215</span></a>
                             </p>
@@ -42,6 +26,12 @@ function Contact() {
                                 <a href="https://www.facebook.com/christinejane.cabactulan.1?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-facebook"></i>
                                     <span>Facebook Profile</span>
+                                </a>
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com/chrisjane8/" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-instagram"></i>
+                                    <span>Instagram Profile</span>
                                 </a>
                             </p>
                         </div>

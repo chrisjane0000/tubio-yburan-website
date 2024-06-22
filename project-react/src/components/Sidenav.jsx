@@ -17,7 +17,7 @@ function Sidenav() {
             <div className="topnav">
                 <a href="#" onClick={() => scrollToSection('section1')}>Home</a>
                 <Link to="/tubio-yburan/RecipesPage">Recipes</Link>
-                <a href="#" onClick={() => scrollToSection('section3')}>About</a>
+                <Link to="/tubio-yburan/AboutUs">About</Link>
                 <a href="#" onClick={() => scrollToSection('section4')}>Contact</a>
             </div>
 
